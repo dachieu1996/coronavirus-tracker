@@ -1,0 +1,9 @@
+<div class="control-section">
+  <h1 align='center'>{{ currentDate }}</h1>
+  <ejs-maps id='container' style="height: calc(100vh - 150px);display:block;" (load)="load($event)" (loaded)="loaded($event)" [layers]='layers'  [zoomSettings]="zoomSettings" [zoomSettings]="zoomSettings" [margin]='margin' #maps>
+  </ejs-maps>
+<div style='text-align: center;' align='center'>
+  <ejs-slider id='slider' [min]="min" [max]="max" [value]="value" step=86400000  [showButtons]=true (changed)="onChangedSlider($event)" (change)="onChangeSlider($event)"></ejs-slider>
+</div>
+
+</div>
